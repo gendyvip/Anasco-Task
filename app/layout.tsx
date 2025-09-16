@@ -42,7 +42,7 @@ export default function RootLayout({
                     {children}
                   </div>
                   {rightOpen && (
-                    <div className="md:col-span-4 sm:pb-6 md:mt-4 xl:col-span-2 xl:-mt-16">
+                    <div className="md:col-span-4 pb-6 md:mt-4 xl:col-span-2 xl:-mt-16">
                       <RightPanel
                         notifications={data.notifications}
                         activities={data.activities}
