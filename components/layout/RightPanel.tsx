@@ -22,7 +22,7 @@ export default function RightPanel({
   }
   return (
     <aside className="h-auto md:h-auto xl:h-screen xl:sticky xl:top-0 overflow-visible xl:overflow-hidden">
-      <section className="border border-gray-200 bg-white p-4 m-6  mt-0 rounded-xl md:m-4 md:rounded-xl xl:m-0 xl:rounded-none  xl:h-full">
+      <section className="border border-gray-200 bg-white p-4 mx-6  mt-0 rounded-xl md:m-4 md:rounded-xl xl:m-0 xl:rounded-none  xl:h-full">
         <div className="mb-4 font-medium">Notifications</div>
         <ul>
           {notifications.map((n, i) => {
