@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Anasco Group Dashboard
 
-## Getting Started
+A Next.js (App Router) dashboard UI with responsive sidebar, navbar, right panel, and charts.
 
-First, run the development server:
+Prerequisites
+- Node.js 18+ (recommended LTS)
+- npm (or yarn/pnpm/bun)
 
+Quick Start
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# http://localhost:3000 (redirects to /dashboards/default)
+
+# Production
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Folder Structure
+```
+anascotask/
+├─ app/
+│  ├─ dashboards/
+│  │  ├─ default/page.tsx         # Default dashboard route
+│  │  └─ page.tsx                 # Redirect → /dashboards/default
+│  ├─ layout.tsx                  # Global layout (Navbar, Sidebar, RightPanel)
+│  ├─ not-found.tsx               # 404
+│  └─ page.tsx                    # Redirect → /dashboards/default
+├─ components/
+│  ├─ layout/
+│  │  ├─ Navbar.tsx               # Top navigation, toggles for panels
+│  │  ├─ Sidebar.tsx              # Left navigation
+│  │  └─ RightPanel.tsx           # Notifications/Activities/Contacts
+│  └─ ui/
+│     ├─ Charts.tsx               # Line, Bar, Donut charts
+│     ├─ StatsCards.tsx           # KPI cards
+│     └─ TrafficWebsite.tsx       # Traffic bars
+├─ data/
+│  └─ dashboard.json              # Demo data
+├─ public/
+│  └─ assets/
+│     ├─ contacts/                # Sample avatars
+│     └─ group.png                # Sidebar brand icon
+├─ styles/
+│  └─ globals.css                 # Tailwind + custom styles
+├─ types/
+│  ├─ charts.ts                   # Chart types
+│  └─ dashboard.ts                # Stat/Notification/Activity types
+├─ next.config.ts
+├─ postcss.config.mjs
+├─ package.json
+└─ tsconfig.json
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Scripts
+- dev: start development server
+- build: production build (Turbopack)
+- start: run built app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Environment
+- No env vars required; data is local in `data/dashboard.json`.
 
-## Learn More
+Libraries Used
+- Next.js 15 (App Router) + Turbopack
+- React 18 + TypeScript
+- Tailwind CSS
+- Chart.js + react-chartjs-2 (loaded via next/dynamic)
+- Lucide React icons
+- next/font (Inter)
 
-To learn more about Next.js, take a look at the following resources:
+Notes
+- Sidebar and right panel are responsive and full-height on large screens; toggles live in the navbar.
+- Charts are client-only and memoized for performance.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

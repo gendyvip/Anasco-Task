@@ -1,0 +1,175 @@
+{
+    "cards": [
+        {
+            "label": "Views",
+            "value": "721K",
+            "delta": "+11.01%"
+        },
+        {
+            "label": "Visits",
+            "value": "367K",
+            "delta": "-0.03%"
+        },
+        {
+            "label": "New Users",
+            "value": "1,156",
+            "delta": "+15.03%"
+        },
+        {
+            "label": "Active Users",
+            "value": "239K",
+            "delta": "+6.08%"
+        }
+    ],
+    "lineLabels": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul"
+    ],
+    "linePrevious": [
+        8,
+        15,
+        13,
+        10,
+        11,
+        16,
+        22
+    ],
+    "lineCurrent": [
+        12,
+        10,
+        9,
+        12,
+        15,
+        19,
+        23
+    ],
+    "bar": [
+        {
+            "label": "Linux",
+            "value": 20
+        },
+        {
+            "label": "Mac",
+            "value": 23
+        },
+        {
+            "label": "iOS",
+            "value": 21
+        },
+        {
+            "label": "Windows",
+            "value": 26
+        },
+        {
+            "label": "Android",
+            "value": 10
+        },
+        {
+            "label": "Other",
+            "value": 22
+        }
+    ],
+    "websites": [
+        {
+            "label": "Google",
+            "value": 28
+        },
+        {
+            "label": "YouTube",
+            "value": 22
+        },
+        {
+            "label": "Instagram",
+            "value": 48
+        },
+        {
+            "label": "Pinterest",
+            "value": 18
+        },
+        {
+            "label": "Facebook",
+            "value": 26
+        },
+        {
+            "label": "Twitter",
+            "value": 20
+        },
+        {
+            "label": "Tumblr",
+            "value": 16
+        }
+    ],
+    "location": {
+        "labels": [
+            "United States",
+            "Canada",
+            "Mexico",
+            "Other"
+        ],
+        "values": [
+            38.6,
+            22.5,
+            30.8,
+            8.1
+        ],
+        "colors": [
+            "#0B1220",
+            "#C9F1DD",
+            "#B9D4FF",
+            "#D7DEE7"
+        ]
+    },
+    "notifications": [
+        {
+            "title": "You have a bug that needs...",
+            "time": "Just now"
+        },
+        {
+            "title": "New user registered",
+            "time": "59 minutes ago"
+        },
+        {
+            "title": "You have a bug that needs...",
+            "time": "12 hours ago"
+        },
+        {
+            "title": "Andi Lane subscribed to you",
+            "time": "Today, 11:59 AM"
+        }
+    ],
+    "activities": [
+        {
+            "text": "You have a bug that needs...",
+            "time": "Just now"
+        },
+        {
+            "text": "Released a new version",
+            "time": "59 minutes ago"
+        },
+        {
+            "text": "Submitted a bug",
+            "time": "12 hours ago"
+        },
+        {
+            "text": "Modified A data in Page X",
+            "time": "Today, 11:59 AM"
+        },
+        {
+            "text": "Deleted a page in Project X",
+            "time": "Feb 2, 2023"
+        }
+    ],
+    "contacts": [
+        "Natali Craig",
+        "Drew Cano",
+        "Orlando Diggs",
+        "Andi Lane",
+        "Kate Morrison",
+        "Koray Okumus"
+    ]
+}
